@@ -11,5 +11,12 @@
         // redirect current page to new location
         window.location = redirect;
     }
+    
+    function OnMouseIn (elem) {
+    elem.style.border = "2px solid blue";
+  }
+  function OnMouseOut (elem) {
+    elem.style.border = "";
+  }
 
 </script>
