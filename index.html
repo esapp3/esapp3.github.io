@@ -8,13 +8,16 @@
         <!-- The above 3 meta tags *must* come first in the head; any other head
         content must come *after* these tags -->
         <title>Portfolio</title>
-        <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" type="text/css">
-        <link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>    
+        <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" 
+        rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700"
+        rel="stylesheet" type="text/css"> 
+        <link href='http://fonts.googleapis.com/css?family=Cardo:400,700' rel='stylesheet' type='text/css'>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
-        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-        <script src="js/openFile.js"></script>
+        <link href="css/hover.css" rel="stylesheet" media="all">
+        <link rel="shortcut icon" href="img/erin.ico" type="image/x-icon">
+        <link rel="icon" href="img/erin.ico" type="image/x-icon">
     </head>
     
     <body>
@@ -27,100 +30,178 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><span><img src="img/logo.png"></span></a>
+                    <a class="navbar-brand" href="index.html"><span><img src="img/erin-tree.png"></span></a>
                 </div>
-                <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+                <div class="navbar-collapse collapse" id="navbar-ex-collapse">
+                    <!-- <ul class="nav navbar-nav navbar-left left-section"> -->
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active">
                             <a href="index.html">Projects</a>
-                        </li>
-                        <li>
-                            <a href="about.html">About Me</a>
-                        </li>                        
+                        </li>                       
                         <li>
                             <a href="port/resume.pdf">Resume</a>
                         </li>
-                    </ul>
+                        <li>
+                            <a href="about.html">Contact Me</a>
+                        </li>                                            
+                  </ul>
                 </div>
             </div>
-            <div class="nav-line">
-                <hr style="height:0.5px;color:#D3D3D3;background-color:#D3D3D3;">
-            </div>
         </div>
-        <div class="section">
+      
+        <section class="intro text">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="portfolio">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <p class="text-center lead"></p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <a href="health.html"><img src="img/healthMatters_circle.png" alt="Health Matters" class="circular img-responsive"></a>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <a href="facebook.html"><img src="img/facebookPoster_circle.png" alt="Facebook Poster" class="circular img-responsive"></a>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <a href="humor.html"><img src="img/humorGenome_circle.png" alt="Humor Genome Project" class="circular img-responsive"></a>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <a href="nitsche.html"><img src="img/nitscheSays_circle.png" alt="Nitsche Says" class="circular img-responsive"></a>
-                                    </div>
-                                </div>
-                                <br>
-                                <br>
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <a href="picture.html"><img src="img/pictureThis_circle.png" alt="Picture This" class="circular img-responsive"></a>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <a href="duckie.html"><img src="img/duckieDash_circle.png" alt="Duckie Dash" class="circular img-responsive"></a>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <a href="wreckcamp.html"><img src="img/wreckCamp_circle.png" alt="Wreck Camp" class="circular img-responsive"></a>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <a href="thd.html"><img src="img/homeDepot_circle.png" alt="The Home Depot" class="circular img-responsive"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <h2> Hi, my name is Erin Sapp. I am a developer, designer, and a creator. 
+                          I love projects that are fresh and creative, and I love learning new skills and
+                          discovering new experiences.  I am a lover of curiosity, cutting-edge ideas, 
+                          laughter, and food.
+                        </h2>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="section">
-            <div class="container">
-                <div class="row">
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                </div>
-            </div>
-        </div>
+        </section>
+        
+        <br> <br> <br> <br>
+        
+        <section class="text">
+          <div class="container"> 
+                      
+              <ul id="filter">
+                  <li><a class="active" href="#" data-group="all">All</a></li>
+                  <li><a href="#" data-group="design">Design</a></li>
+                  <li><a href="#" data-group="coding">Coding</a></li>
+                  <li><a href="#" data-group="modeling">Modeling</a></li>
+                  <li><a href="#" data-group="other">Other</a></li>
+              </ul>
+               
+              <div class="projectItems" id="grid">
+                  <div class="item coding" data-groups='["all", "coding"]'>
+                    <div><a href="duckie.html"><img src="img/duckiedash.png" class="img-responsive"></a></div>
+                  </div>
+                  <div class="item coding"   data-groups='["all", "coding"]'>
+                    <div><a href="chsh.html"><img src="img/cleanhands.png" class="img-responsive"></div>
+                  </div>
+                  <div class="item design"   data-groups='["all", "design"]'>
+                    <div><a href="humor.html"><img src="img/humorgenome.png" class="img-responsive"></div>
+                  </div>
+                  <div class="item coding"  data-groups='["all", "coding"]'>
+                    <div><a href="website.html"><img src="img/websiteprogress.png" class="img-responsive"></div>
+                  </div>
+                  <div class="item design"  data-groups='["all", "design"]'>
+                    <div><a href="health.html"><img src="img/healthmatters.png" class="img-responsive"></a></div>
+                  </div>
+                  <div class="item modeling" data-groups='["all", "modeling"]'>
+                    <div><a href="nitsche.html"><img src="img/nitschesays.png" class="img-responsive"></a></div>
+                  </div>
+                  <div class="item other"   data-groups='["all", "other"]'>
+                    <div><a href="wreckcamp.html"><img src="img/wreckcamp.png" class="img-responsive"></a></div>
+                  </div>
+                  <div class="item coding"  data-groups='["all", "coding"]'>
+                    <div><a href="thd.html"><img src="img/thehomedepot.png" class="img-responsive"></a></div>
+                  </div>
+                  <div class="item design"  data-groups='["all", "design"]'>
+                    <div><a href="facebook.html"><img src="img/facebookposter.png" class="img-responsive"></a></div>
+                  </div>
+                  <div class="item other"  data-groups='["all", "other"]'>
+                    <div><a href="forthekids.html"><img src="img/forthekids.png" class="img-responsive"></div>
+                  </div>
+                  <div class="item modeling" data-groups='["all", "modeling"]'>
+                    <div><a href="grocerycart.html"><img src="img/grocerycart.png" class="img-responsive"></div>
+                  </div>
+                  <div class="item coding" data-groups='["all", "coding"]'>
+                    <div><a href="picture.html"><img src="img/picturethis.png" class="img-responsive"></a></div>
+                  </div>
+              </div>
+          </div>
+        </section>
+
         <footer class="section section-primary">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-sm-6 text-center">
                         <p class="text-center">&nbsp;© 2015 Erin Sapp</p>
+                        <a href="https://github.com/" target="_blank"><img src="img/github.png"></a>
+                        <a href="https://www.linkedin.com/in/erinsapp" target="_blank"><img src="img/linkedin.png"></a>
+                        <a href="mailto:esapp3@gatech.edu" target="_blank"><img src="img/email.png"></a>
                     </div>
                 </div>
             </div>
         </footer>
         <!-- end container-->
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual
         files as needed -->
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.min.js"></script>
+        <!-- // <script src="js/jquery.min.js"></script> -->
         <!-- <script src="js/navbar.js"></script> -->
+        <script src="js/jquery.shuffle.min.js"></script>
+        <script src="js/shuffle.js"></script>
+        <script type="text/javascript" language="javascript">
+        $(document).ready(function() {  
+          
+        //set opacity to 0.4 for all the images  
+        //opacity = 1 - completely opaque  
+        //opacity = 0 - invisible  
+          
+        $('.coding img').css('opacity', 1);  
+
+        // when hover over the selected image change the opacity to 1  
+        $('.coding div').hover(  
+           function(){  
+              $(this).find('img').stop().fadeTo('slow', 0.3); 
+           },  
+           function(){  
+              $(this).find('img').stop().fadeTo('slow', 1);  
+           });  
+        });
+        </script>
+        <script type="text/javascript" language="javascript">
+        $(document).ready(function() {  
+        $('.design img').css('opacity', 1);  
+ 
+        // when hover over the selected image change the opacity to 1  
+        $('.design div').hover(  
+           function(){  
+              $(this).find('img').stop().fadeTo('slow', 0.3);  
+           },  
+           function(){  
+              $(this).find('img').stop().fadeTo('slow', 1);  
+           });  
+        });
+        </script>
+        <script type="text/javascript" language="javascript">
+        $(document).ready(function() {          
+        
+        $('.modeling img').css('opacity', 1);  
+
+        // when hover over the selected image change the opacity to 1  
+        $('.modeling div').hover(  
+           function(){  
+              $(this).find('img').stop().fadeTo('slow', 0.3);  
+           },  
+           function(){  
+              $(this).find('img').stop().fadeTo('slow', 1);  
+           });  
+        });
+        </script>
+        
+        <script type="text/javascript" language="javascript">
+        $(document).ready(function() {   
+        $('.other img').css('opacity', 1); 
+
+        // when hover over the selected image change the opacity to 1  
+        $('.other div').hover(  
+           function(){  
+              $(this).find('img').stop().fadeTo('slow', 0.3);  
+           },  
+           function(){  
+              $(this).find('img').stop().fadeTo('slow', 1);  
+           });  
+        });
+        </script>
     </body>
 
 </html>

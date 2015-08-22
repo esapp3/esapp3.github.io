@@ -23,37 +23,49 @@ time, mark, audio, video {
 /* Navbar edits CSS */
 /*//////////////////*/
 
-/*Active Link*/
-
 .navbar-default {
-    font-family:'Lato', sans-serif;
-    background-color: white;
-    border-color: white;
-    min-height: 150px;
+    font-family: 'Cardo', serif;
+    background-color: #EBEBEA;
+    border-color: #EBEBEA;
+    min-height: 180px;
 }
 
 .navbar-default .navbar-nav > .active > a {
-  color: #64A12B;
-  background-color: white;
-}
-.navbar-default .navbar-nav > .active > a:hover {
-  color: #64A12B;
-  background-color: white;
+  color: #52B08E;
+  background-color: #EBEBEA;
 }
 
+.navbar-default .navbar-nav > .active > a:hover {
+  color: #52B08E;
+  background-color: #EBEBEA;
+}
+
+.navbar-default .navbar-nav {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-default .navbar-nav > li {
+  display: inline-block;
+}
+  
 .navbar-default .navbar-nav > li > a {
-   color: #64A12B; /*active text color*/
-   background-color: white;
-   padding-top: 0;
+   color: #40484A; /*active text color*/
+   background-color: transparent;
+   padding-top: 60px;
 }
 
 .navbar-collapse {
-  padding-top: 60px;
+  padding-top: 50px;
   border-top: transparent;
+  text-align: right;
 }
 
-.navbar-collapse .navbar-nav .navbar-right > li {
+.navbar-collapse .navbar-nav > li {
   padding-bottom: 5px;
+  padding-left: 15px;
 }
 
 .navbar .nav-line {
@@ -62,60 +74,131 @@ time, mark, audio, video {
     padding-top: 40px;
 }
 
-.hr {
-  height: 4px;
-  color: black;
-}
-
-/*///////////////*/
-/* Main Page CSS */
-/*///////////////*/
+/*/////////////*/
+/* General CSS */
+/*/////////////*/
 
 body {
   width:100%;
   background-color: white;
-  font-family:'Lato', sans-serif;
+  font-family: 'Cardo', serif;
+  font-weight: 700;
+  color: #40484A;
   padding: inherit;
 }
 
-.circular {
-	border-radius: 150px;
-	-webkit-border-radius: 150px;
-	-moz-border-radius: 150px;
-}
-
-.portfolio {
-  margin-left: 20px;
-}
-
-.portfolio h1 {
-  font-size: 30px;
-  font-weight: 500;
+.text h1 {
+  font-size: 50px;
+  color: #40484A;
+  text-align: left;
+  padding-top: 30px;
   padding-bottom: 5px;
 }
-.portfolio h3 {
-  font-size: 22px;
+.text h2 {
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+  padding-top:50px;
+  padding-bottom: 60px;
+}
+.text h3 {
+  font-size: 40px;
   font-weight: 300;
-  font-style: italic;
+  color: #40484A;
+  padding-top: 25px;
   padding-bottom: 25px;
-}
-.portfolio p {
-  font-size: 16px;
-  font-weight: 300;
-  padding-bottom: 30px;
-}
-.humor {
-  border-image-width: 50px;
-  border: 1px ridge #888;
-  margin-right: 50px;
+  text-align: left;
 }
 
-.pager li a {
-   color: #64A12B;
+.text h4 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #40484A;
+  padding-bottom: 25px;
+}
+
+.text p {
+  font-size: 16px;
+  font-weight: 300;
+  color: black;
+  padding-bottom: 30px;
+}
+
+
+/*//////////////*/
+/* Skills CSS */
+/*//////////////*/
+
+.skills .hr {
+  height: 4px;
+  color: #EBEBEA;
+}
+
+.skills .row .col-md-3 {
+  text-align: center;
+}
+
+.skills .row .col-md-3 img {
+  display:inline-block;
+  margin:0 5px;
+}
+
+.skills li {
+  list-style-type: none;
+  text-decoration:none;
+  /*border-radius: 100px;*/
+}
+
+.skills li:hover {
+  /*background-color:#40484A;*/
+  background-color: #40484A; 
+}
+
+/*//////////////*/
+/* Projects CSS */
+/*//////////////*/
+
+.projects .hr {
+  height: 4px;
+  color: #EBEBEA;
+}
+
+.projects h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #40484A;
+  text-align: left;
+  padding-top: 50px;
+  padding-bottom: 5px;
+}
+.projects h2 {
+  font-size: 25px;
+  font-weight: 300;
+  font-style: italic;
+  color: #40484A;
+  padding-bottom: 30px;
+  text-align: left;
+}
+
+.projects h3 {
+  font-size: 20px;
+  font-weight: 300;
+  color: #40484A;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.projects p {
+  font-size: 20px;
+  font-weight: 300;
+  color: black;
 }
 
 #carousel-example {
-  margin-bottom: 100px;
+  margin-top: 50px;
+  margin-bottom: 40px;
 } 
 
 .carousel-inner .item > img {
@@ -127,7 +210,7 @@ body {
 }
 
 .carousel-control {
-  color: #64A12B;
+  color: #E35388;
   text-decoration: none;
   filter: alpha(opacity=90);
   outline: 0;
@@ -135,55 +218,209 @@ body {
 }
 .carousel-control:hover,
 .carousel-control:focus {
-  color: #64A12B;
+  color: #E35388;
   text-decoration: none;
   filter: alpha(opacity=90);
   outline: 0;
   opacity: .9;
 }
 
+.topbar {
+  background-color: #40484A;
+  padding-top: 10px;
+}
+
+.topbar h1 {
+  font-size: 70px;
+  color: #40484A;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 5px;
+}
+
+#filter {
+  list-style-type: none;
+  vertical-align: middle;
+  padding-top: 20px;
+  padding-bottom: 150px;
+}
+
+#filter li, #filter a {
+  display: block;
+  width: 100px;
+  /*height: 100px;
+  border-radius: 100px;*/
+  background-color: #0000ff;
+  vertical-align: middle;
+  float: left;
+}
+
+#filter a { 
+  background: white; 
+  color: #40484A;
+  text-align: center;
+  /*border: 1px solid #666; */
+  text-decoration: none; 
+  vertical-align: middle;
+  padding-top: 35px;
+  padding-bottom: 20px;
+}
+
+#filter a.active {
+  background: #40484A;
+  color: white;
+}
+ 
+#grid {
+  clear: both; 
+  position: relative;
+}
+
+.projectItems {
+  margin-bottom: 100px;
+  /*padding-left: 150px;
+  padding-right: 150px;*/
+}
+
+.item {
+  /*width: 275px; 
+  height: 250px; */
+  /*background: grey; */
+  float: center; 
+  margin-right: 10px; 
+  margin-bottom: 10px; 
+  color: #fff; 
+  font-size: 60px; 
+  text-align: center; 
+  line-height: 230px; 
+  cursor: default;
+}
+
+.projectItems p {
+  font-size: 20px;
+  color: white;
+  font-family: 'Cardo', serif;
+}
+
+.hover-text {
+  color: white;
+  visibility: hidden;
+}
+.hover-text:hover {
+  visibility: visible;
+}
+.coding {
+  background-color: #40484A;
+  display: inline-block;
+}
+.modeling {
+  background: #52B08E;
+  display: inline-block;
+}
+.design {
+  background: #E35388;
+  display: inline-block;
+}
+.other {
+  background: #53C7E3;
+  display: inline-block;
+}
+
+.humor {
+  padding-top: 50px;
+  border-image-width: 50px;
+  border: 1px ridge #888;
+  margin-right: 50px;
+}
+
+.pager li a {
+   color: #40484A;
+}
+
+.circular {
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+}
+
 /*////////////////*/
 /* Experience CSS */
 /*////////////////*/
 
+.experience .hr {
+  height: 4px;
+  color: #EBEBEA;
+}
+
 .experience h1 {
-  padding-top: 20px;
-  padding-bottom: 50px;
-  font-weight: 700;
-  font-size: 40px;
-  padding-left: 50px;
+  font-size: 50px;
+  color: #40484A;
+  text-align: left;
+  padding-top: 30px;
+  padding-bottom: 15px;
 }
 
 .experience h2{
-  padding-top: 20px;
-  padding-bottom: 50px;
-  font-weight: 400;
-  font-size: 30px;
+  font-size: 40px;
+  font-weight: 500;
+  padding-top: 30px;
   padding-left: 50px;
 }
 
 .experience h3{
-  padding-top: 10px;
-  font-size: 20px;
-  padding-left: 50px;
+  font-size: 25px;
   font-weight: 200;
+  padding-top: 10px;
+  padding-left: 50px;
 }
 
 .experience p {
-  padding-top: 10px;
+  font-family: 'Cardo', serif;
+  padding-top: 20px;
+  font-weight: 200;
   font-size: 20px;
   padding-left: 50px;
   padding-bottom: 50px;
-  font-weight: 200;
 }
 
-
+.experience img {
+  padding-top: 50px;
+}
 /*////////////////*/
 /* ABOUT ME CSS */
 /*////////////////*/
 
 
-/* About page css */
+.intro {
+  background-color: #40484A;
+  margin-top: -20px;
+  padding-top: 50px;
+  padding-bottom: 55px;  
+}
+
+.mywork {
+  padding-top: 50px;
+  padding-bottom: 75px;  
+}
+
+.mywork .row .col-md-3 {
+  text-align: center;
+}
+
+.mywork .row .col-md-3 img {
+  display:inline-block;
+  margin:0 5px;
+}
+
+.learnMore {
+  float:right; 
+  padding-top: 70px;
+  padding-right: 70px;
+}
+
+.aboutme {
+  padding-bottom: 75px;  
+}
 
 .about .col-md-8 h2{
   font-size: 30px;
@@ -218,15 +455,15 @@ footer {
   /*clear: both;
   margin-bottom: 0 auto;
   margin: 0 auto;*/
-  background-color: white;
-  height:150px;
+  background-color: #40484A;
+  height:200px;
   margin-bottom: 0;
   padding-top: 50px;
 }
 
 footer p {
   font-family: 'Lato', sans-serif;
-  color:#64A12B;
+  color: white;
   font-size:15px;
   font-weight: 700;
   text-align: center;
